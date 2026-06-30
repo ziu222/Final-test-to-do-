@@ -3,9 +3,9 @@ import './App.css'
 
 function App() {
   const [tasks, setTasks] = useState([
-    { id: crypto.randomUUID(), text: 'Do coding challenges', active: true },
-    { id: crypto.randomUUID(), text: 'Do coding challenges', active: true },
-    { id: crypto.randomUUID(), text: 'Do coding challenges', active: false },
+    { id: crypto.randomUUID(), text: 'Buy groceries', active: true },
+    { id: crypto.randomUUID(), text: 'Read a book', active: true },
+    { id: crypto.randomUUID(), text: 'Clean the room', active: false },
   ])
   const [tab, setTab] = useState('all')
   const [inputValue, setInputValue] = useState('')

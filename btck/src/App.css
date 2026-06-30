@@ -1,8 +1,26 @@
+:root {
+  color-scheme: light;
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --accent: #2563eb;
+}
+
+body,
+#root {
+  background: #fff;
+  color: var(--text-h);
+}
+
 #todo_app {
+  background: #fff;
+  min-height: 100vh;
   max-width: 480px;
   margin: 0 auto;
   padding: 32px 20px;
   text-align: left;
+  font-family: 'Segoe UI', system-ui, sans-serif;
 }
 
 #todo_app h1 {
@@ -13,18 +31,20 @@
 
 .tabs {
   display: flex;
+  justify-content: center;
+  gap: 32px;
   border-bottom: 1px solid var(--border);
   margin-bottom: 16px;
 }
 
 .tab {
-  flex: 1;
   background: none;
   border: none;
   border-bottom: 2px solid transparent;
-  padding: 10px 0;
+  padding: 10px 4px;
   font: inherit;
   color: var(--text);
+  white-space: nowrap;
   cursor: pointer;
 }
 
